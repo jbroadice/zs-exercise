@@ -1,0 +1,16 @@
+{
+  "name": "isite-code-test-api",
+  "version": "1.0.0",
+  "description": "A dummy API to be used during the isite coding test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true,
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chance": "^1.1.8",
+    "json-server": "^0.8.18"
+  }
+}
