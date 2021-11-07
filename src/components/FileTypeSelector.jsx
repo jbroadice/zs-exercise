@@ -9,13 +9,9 @@ import FileTypeTag from '@/components/FileTypeTag'
 const loadOptions = (inputValue) =>
   new Promise((resolve) => {
     getFileTypes().then((types) => {
-      let typesFiltered = types
-
-      if (inputValue) {
-        typesFiltered = types.filter((type) =>
-          type.name.toLowerCase().includes(inputValue.toLowerCase())
-        )
-      }
+      const typesFiltered = types.filter((type) =>
+        !inputValue || type.name.toLowerCase().includes(inputValue.toLowerCase())
+      )
 
       resolve(typesFiltered.map((type) => ({
         label: type.name,
