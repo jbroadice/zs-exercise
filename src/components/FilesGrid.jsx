@@ -18,6 +18,10 @@ export default function FilesGrid({ files, filterByType, filterByName }) {
     ))
   }, [files, filterByType, filterByName])
 
+  if (filesFiltered.length === 0) {
+    return <div>No files found.</div>
+  }
+
   return (
     <div className={styles.grid}>
       {filesFiltered.map(({ title, type, createdBy, modifiedBy }, i) =>
