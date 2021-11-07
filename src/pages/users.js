@@ -5,9 +5,14 @@ export default function Users({ users }) {
     return <div>Could not retrieve users after multiple retries, and no cache yet exists. Please refresh to try again.</div>
   }
 
-  return users.map(({ givenName, familyName }, i) => (
-    <div key={i}>{givenName} {familyName}</div>
-  ))
+  return (
+    <div>
+      <h1>Users</h1>
+      {users.map(({ givenName, familyName }, i) => (
+        <div key={i}>{givenName} {familyName}</div>
+      ))}
+    </div>
+  )
 }
 
 export const getServerSideProps = async () => {
@@ -15,7 +20,7 @@ export const getServerSideProps = async () => {
 
   return {
     props: {
-      users
+      users,
     }
   }
 }

@@ -1,3 +1,5 @@
+import styles from '@/styles/FileTypeSelector.module.css'
+
 import { useState } from 'react'
 import { getFileTypes } from '@/data/files'
 
@@ -37,6 +39,7 @@ export default function FileTypeSelector({ onChange }) {
   return <AsyncSelect
     instanceId='select-filter-file-type'
     placeholder='Filter by file type...'
+    className={styles.selector}
     defaultOptions
     isClearable
     value={selectedOption}

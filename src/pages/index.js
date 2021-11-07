@@ -17,7 +17,7 @@ export default function Home({ files }) {
   }
 
   return (
-    <div className='app-container'>
+    <div>
       <FilesGridFilters
         onFileTypeFilterChange={onFileTypeFilterChange}
         onFileNameFilterChange={onFileNameFilterChange}

@@ -1,16 +1,21 @@
-import '../styles/globals.css'
+import '@/styles/globals.css'
 
-import Link from 'next/link'
+import Head from 'next/head'
+import HeaderNav from '@/components/HeaderNav'
 
 function MyApp({ Component, pageProps }) {
   return (
     <div>
-      <nav>
-        <Link href='/'>Home</Link>
-        <Link href='/users'>Users</Link>
-      </nav>
+      <Head>
+        <title>Zensar Studios Technical Exercise</title>
+        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+      </Head>
 
-      <Component {...pageProps} />
+      <HeaderNav />
+
+      <div className='app-container'>
+        <Component {...pageProps} />
+      </div>
     </div>
   )
 }

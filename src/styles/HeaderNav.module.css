@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  border-bottom: 1px #ddd solid;
+}
+
+.container li a {
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+  padding: 0.6rem;
+  border-right: 1px #ddd solid;
+}
+.container li a:hover {
+  background-color: #eee;
+}
+
