@@ -21,3 +21,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
  - Could use TypeScript to expose expected props for components and enable strict type-checking.
  - Could use Context API or State management library to hoist state (eg filters state) so that state is remembered across page navigations.
+- Could add sorting / grouping options for files grid.
