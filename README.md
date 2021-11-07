@@ -28,3 +28,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
  - Could use Context API or State management library to hoist state (eg filters state) so that state is remembered across page navigations.
 - Could add sorting / grouping options for files grid.
 - Files grid could incorporate additional API fields, eg. `live`, `popularity`, `scheduled`, times, etc.
+- API error reporting could be more explicit, but keeping it simple for the sake of this demo, and to demonstrate graceful handling of the dodgy users endpoint.
