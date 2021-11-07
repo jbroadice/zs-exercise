@@ -3,7 +3,7 @@ import axiosRetry from 'axios-retry'
 
 const axios = setup({
   // `axios` options
-  baseURL: 'http://localhost:3001',
+  baseURL: process.env.NEXT_PUBLIC_API_BASE_URL,
 
   // `axios-cache-adapter` options
   cache: {
