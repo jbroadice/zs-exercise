@@ -1,39 +1,34 @@
-# Zensar Studios/Foolproof technical exercise 
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Create a React app that will display some information from the provided API. You are welcome to use something like Create React App to get started quickly. It is up to you to decide if you want to use Typescript or not (we're happy either way!).
+## Getting Started
 
-## API
-
-To use the server:
+First, run the development server:
 
 ```bash
-cd api
-npm install 
-node index.js
+npm run dev
+# or
+yarn dev
 ```
 
-The server will now listen at http://localhost:3001 and you can try the 3 different responses from the different endpoints:
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- Users: http://localhost:3001/Users
-- Files: http://localhost:3001/Files
-- Types: http://localhost:3001/Types
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-## The App
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-Create a React app that will display the Users, the Files and the Types.
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-For the Files we would like to show the name of the user that updated and created the file and also type of the file. 
+## Learn More
 
-For the Types we would like to categorise the Files by Type.
+To learn more about Next.js, take a look at the following resources:
 
-Bonus question: create a search page or a global search box where we will be able to search for all the files by name.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## What you have to do
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-As an app this should be straightforward to create, 3 end points and 3 sets of data. You can decide how to display the information however you think it is best. 
+## Deploy on Vercel
 
-You can create your own visuals, feel free to go as far or not as you like. What we first want to see is an understanding of basic engineering practices and how to build an app well. We would like to see what your key strengths are, perhaps you are an expert in state mangement, maybe you are a CSS wizard or maybe you write uber-efficient Javascript. Nobody knows everything so just express yourself and show us what you are great at!
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-We do not expect you to spend more than a handful of hours on this, use the time wisely to expose your key strengths. Finally, feel free to add your thoughts and comments in a file so that we can discuss together and build on the app further.
-
-Thank you very much for taking the time, we look forward to seeing your creation!
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

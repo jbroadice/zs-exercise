@@ -1,0 +1,15 @@
+.input {
+  font: inherit;
+  border-color: hsl(0, 0%, 80%);
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 0.4rem 0.6rem;
+}
+
+.input:active,
+.input:focus {
+  outline: none !important;
+  border-color: #2684ff;
+  box-shadow: 0 0 0 1px #2684ff;
+}

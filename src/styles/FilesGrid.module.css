@@ -1,0 +1,24 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.col {
+  flex: 0 0 10rem;
+  background-color: #eee;
+  border-radius: 0.5rem;
+  padding: 0.4rem;
+}
+.col:hover {
+  filter: brightness(0.8);
+}
+
+.title {
+  font-weight: bold;
+}
+
+.createdBy,
+.modifiedBy {
+  font-size: 0.6rem;
+}
