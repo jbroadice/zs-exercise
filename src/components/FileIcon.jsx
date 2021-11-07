@@ -1,6 +1,6 @@
-import { FILE_TYPE_ARTICLE, FILE_TYPE_PROFILE } from '@constants';
+import { FILE_TYPE_ARTICLE, FILE_TYPE_PROFILE } from '@constants'
 
-import { FaUser, FaRegFileAlt } from 'react-icons/fa';
+import { FaUser, FaRegFileAlt } from 'react-icons/fa'
 
 export default function FileIcon({ type }) {
   switch (type) {

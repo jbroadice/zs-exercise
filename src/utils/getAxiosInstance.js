@@ -16,13 +16,13 @@ const axios = setup({
     },
 
     // Deactivate `clearOnStale` option so that we can actually read stale cache data
-    clearOnStale: false
+    clearOnStale: false,
   }
 })
 
 // Automatically retry failed (status 5xx) idempotent requests
 axiosRetry(axios, {
-  retries: 3
+  retries: 3,
 })
 
 export default function getAxiosInstance() {
