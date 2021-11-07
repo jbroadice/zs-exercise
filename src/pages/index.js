@@ -8,6 +8,10 @@ export default function Home({ files }) {
   const [filesFilterByType, setFilesFilterByType] = useState(null)
   const [filesFilterByName, setFilesFilterByName] = useState(null)
 
+  if (files === null) {
+    return <div>Could not load files. Is the API server running?</div>
+  }
+
   const onFileTypeFilterChange = (type) => {
     setFilesFilterByType(type)
   }
